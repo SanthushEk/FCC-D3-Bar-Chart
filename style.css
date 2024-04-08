@@ -1,0 +1,58 @@
+.visHolder {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 20px solid #F2F4FF;
+    background-color: #F2F4FF;
+    padding: 10px;
+    margin-top: 100px;
+}
+body{
+    text-align: center;
+    color: #F2F4FF;
+    background-color :#A9D3FF;
+}
+h1{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+}
+#tooltip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    font: 12px;
+    background-color: rgb(46,62,82);
+    box-shadow: 1px 1px 10px;
+    border-radius: 2px;
+    pointer-events: none;
+}
+#datatype {
+    padding: 6px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  #datatype::-ms-expand {
+    display: none;
+  }
+  #datatype::after {
+    content: '\25BC'; 
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+
+  #signature {
+    bottom: 10px; 
+    text-align: center;
+    color:  #9fb1bc; 
+    font-size: 14px;
+}
